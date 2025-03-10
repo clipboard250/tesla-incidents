@@ -14,14 +14,11 @@
     <main>
         <section>
             <h2>Reported Incidents</h2>
-            <p>
-    button {
-    color: #333; /* Matches body text color */
-}
-
-button:hover {
-    color: white; /* White text on hover to match button vibe */
-}
+          <p>
+    Sort by: 
+    <button onclick="sortTable('newest')">Newest to Oldest</button>
+    <button onclick="sortTable('oldest')">Oldest to Newest</button>
+</p>
            <table id="incident-table">
               <thead>
     <tr>
