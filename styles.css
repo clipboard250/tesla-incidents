@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -10,6 +10,8 @@ header {
     color: white;
     padding: 10px;
     text-align: center;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700;
 }
 
 main {
