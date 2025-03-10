@@ -163,38 +163,51 @@
             </div>
         </section>
     </main>
-    <script>
-        function sortTable(order) {
-            const table = document.getElementById("incident-table");
-            const rows = Array.from(table.rows).slice(1); // Skip the header row
-            rows.sort((a, b) => {
-                const dateA = new Date(a.cells[0].innerText);
-                const dateB = new Date(b.cells[0].innerText);
-                return order === "newest" ? dateB - dateA : dateA - dateB;
-            });
-            const tbody = table.getElementsByTagName("tbody")[0];
-            tbody.innerHTML = "";
-            rows.forEach(row => tbody.appendChild(row));
-            updateTicker(); // Update ticker after sorting
-        }
+<script>
+    function sortTable(order) {
+        const table = document.getElementById("incident-table");
+        const rows = Array.from(table.rows).slice(1); // Skip the header row
+        rows.sort((a, b) => {
+            const dateA = new Date(a.cells[0].innerText);
+            const dateB = new Date(b.cells[0].innerText);
+            return order === "newest" ? dateB - dateA : dateA - dateB;
+        });
+        const tbody = table.getElementsByTagName("tbody")[0];
+        tbody.innerHTML = "";
+        rows.forEach(row => tbody.appendChild(row));
+        updateTicker(); // Update ticker after sorting
+        updateIncidentCount(); // Update incident count after sorting
+    }
 
-        function updateTicker() {
-            const table = document.getElementById("incident-table");
-            const rows = Array.from(table.rows).slice(1); // Skip header
-            if (rows.length === 0) return; // Avoid errors if no rows
-            const latestRow = rows.reduce((latest, current) => {
-                const latestDate = new Date(latest.cells[0].innerText);
-                const currentDate = new Date(current.cells[0].innerText);
-                return currentDate > latestDate ? current : latest;
-            }, rows[0]);
-            const date = latestRow.cells[0].innerText;
-            const description = latestRow.cells[3].innerText;
-            const ticker = document.getElementById("ticker");
-            ticker.innerHTML = `<div class="ticker-content">Latest Incident: ${date} - ${description}</div>`;
-        }
+    function updateTicker() {
+        const table = document.getElementById("incident-table");
+        const rows = Array.from(table.rows).slice(1); // Skip header
+        if (rows.length === 0) return; // Avoid errors if no rows
+        const latestRow = rows.reduce((latest, current) => {
+            const latestDate = new Date(latest.cells[0].innerText);
+            const currentDate = new Date(current.cells[0].innerText);
+            return currentDate > latestDate ? current : latest;
+        }, rows[0]);
+        const date = latestRow.cells[0].innerText;
+        const location = latestRow.cells[1].innerText; // Add location
+        const description = latestRow.cells[3].innerText;
+        const ticker = document.getElementById("ticker");
+        ticker.innerHTML = `<div class="ticker-content">Latest Incident: ${date} - ${location} - ${description}</div>`;
+    }
 
-        // Update ticker when page loads
-        window.onload = updateTicker;
-    </script>
+    function updateIncidentCount() {
+        const table = document.getElementById("incident-table");
+        const rows = Array.from(table.rows).slice(1); // Skip header
+        const incidentCount = rows.length;
+        const header = document.getElementById("incident-header");
+        header.innerText = `Reported Incidents (${incidentCount})`;
+    }
+
+    // Update ticker and count when page loads
+    window.onload = function() {
+        updateTicker();
+        updateIncidentCount();
+    };
+</script>
 </body>
 </html>
