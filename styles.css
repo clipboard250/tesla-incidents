@@ -121,3 +121,24 @@ button:hover {
     color: white; /* White text on hover */
     background-color: #45a049; /* Darker green on hover */
 }
+.ticker {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Archivo', sans-serif;
+    font-size: 1.2em;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.ticker-content {
+    display: inline-block;
+    animation: ticker 10s linear infinite;
+}
+
+@keyframes ticker {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
