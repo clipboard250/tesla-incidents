@@ -58,3 +58,22 @@ iframe {
     width: 100% !important;
     max-width: 100%;
 }
+/* Responsive table */
+@media (max-width: 600px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        min-width: 100px;
+    }
+}
+
+/* Responsive iframe */
+@media (max-width: 600px) {
+    iframe {
+        height: 600px; /* Adjust height for smaller screens */
+    }
+}
