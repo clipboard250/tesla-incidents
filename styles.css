@@ -107,3 +107,17 @@ iframe {
     font-family: 'Montserrat', sans-serif;
     color: #333; /* Matches body text color */
 }
+button {
+    color: #333; /* Matches body text color */
+    padding: 8px 16px;
+    background-color: #4CAF50; /* Green to match submission buttons */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+    color: white; /* White text on hover */
+    background-color: #45a049; /* Darker green on hover */
+}
