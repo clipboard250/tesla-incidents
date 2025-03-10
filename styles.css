@@ -54,9 +54,17 @@ a:hover {
 section {
     margin-top: 20px;
 }
-iframe {
+iframe iframe {
     width: 100% !important;
     max-width: 100%;
+    box-sizing: border-box; /* Ensures padding doesn’t affect width */
+}
+
+@media (max-width: 600px) {
+    iframe {
+        width: 100% !important;
+        height: 600px; /* Keeps it manageable on small screens */
+    }
 }
 /* Responsive table */
 @media (max-width: 600px) {
