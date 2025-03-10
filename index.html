@@ -187,7 +187,25 @@
         const tbody = table.getElementsByTagName("tbody")[0];
         tbody.innerHTML = "";
         rows.forEach(row => tbody.appendChild(row));
+        updateTicker(); // Update ticker after sorting
     }
+
+    function updateTicker() {
+        const table = document.getElementById("incident-table");
+        const rows = Array.from(table.rows).slice(1); // Skip header
+        const latestRow = rows.reduce((latest, current) => {
+            const latestDate = new Date(latest.cells[0].innerText);
+            const currentDate = new Date(current.cells[0].innerText);
+            return currentDate > latestDate ? current : latest;
+        }, rows[0]);
+        const date = latestRow.cells[0].innerText;
+        const description = latestRow.cells[3].innerText;
+        const ticker = document.getElementById("ticker");
+        ticker.innerHTML = `<div class="ticker-content">Latest Incident: ${date} - ${description}</div>`;
+    }
+
+    // Update ticker when page loads
+    window.onload = updateTicker;
 </script>
-    </body>
+</body>
 </html>
