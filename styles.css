@@ -81,28 +81,29 @@ iframe {
 }
 .submission-options {
     display: flex;
-    flex-direction: row; /* Puts buttons and "OR" on the same line */
+    flex-direction: row; /* Keeps buttons on the same line */
     gap: 10px; /* Space between elements */
     align-items: center; /* Vertically centers everything */
     justify-content: center; /* Horizontally centers the group */
     margin-bottom: 20px;
 }
-
 .submission-options button {
     padding: 10px 20px;
-    background-color: #0066cc;
+    background-color: #4CAF50; /* Green color for a better vibe */
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
+    width: 200px; /* Fixed width to match sizes */
+    text-align: center; /* Centers text inside buttons */
 }
 
 .submission-options button:hover {
-    background-color: #0052a3;
+    background-color: #45a049; /* Darker green on hover */
 }
 
 .submission-options span {
     font-family: 'Montserrat', sans-serif;
-    color: #333;
+    color: #333; /* Matches body text color */
 }
