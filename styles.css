@@ -79,7 +79,30 @@ iframe {
         height: 600px; /* Adjust height for smaller screens */
     }
 }
-.github-option {
-    margin-top: 20px;
-    text-align: center;
+.submission-options {
+    display: flex;
+    flex-direction: row; /* Puts buttons and "OR" on the same line */
+    gap: 10px; /* Space between elements */
+    align-items: center; /* Vertically centers everything */
+    justify-content: center; /* Horizontally centers the group */
+    margin-bottom: 20px;
+}
+
+.submission-options button {
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.submission-options button:hover {
+    background-color: #0052a3;
+}
+
+.submission-options span {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
 }
