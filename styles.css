@@ -52,3 +52,7 @@ a:hover {
 section {
     margin-top: 20px;
 }
+iframe {
+    width: 100% !important;
+    max-width: 100%;
+}
