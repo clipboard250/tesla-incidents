@@ -89,14 +89,29 @@ iframe {
 }
 .submission-options button {
     padding: 10px 20px;
-    background-color: #4CAF50; /* Green color for a better vibe */
+    background-color: #4CAF50; /* Will change this color in Part 4 */
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
-    width: 200px; /* Fixed width to match sizes */
+    width: 200px; /* Fixed width for desktop */
     text-align: center; /* Centers text inside buttons */
+}
+@media (max-width: 600px) {
+    .submission-options {
+        flex-direction: column; /* Stack buttons vertically on mobile */
+        gap: 15px; /* More space between buttons */
+    }
+
+    .submission-options button {
+        width: 100%; /* Full width on mobile */
+        max-width: 300px; /* Max width to avoid stretching too much */
+    }
+
+    .submission-options span {
+        display: none; /* Hide "OR" on mobile since buttons are stacked */
+    }
 }
 
 .submission-options button:hover {
