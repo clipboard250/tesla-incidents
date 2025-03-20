@@ -8,3 +8,4 @@ This repository contains a simple, interactive webpage dedicated to documenting 
 - **No Server Needed**: Built with just HTML and CSS, the page runs on GitHub Pages for simplicity and broad accessibility.
 
 The goal of this project is to create a centralized, community-maintained resource for tracking and raising awareness about Tesla-related incidents. Contributions are encouraged—whether you want to report a new incident or suggest improvements, head over to the Issues tab to get started!
+ 
