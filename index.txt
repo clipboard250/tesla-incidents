@@ -1,0 +1,147 @@
+Tesla Incident Tracker
+
+Reported Incidents
+Sort by: Newest to Oldest Oldest to Newest
+Date
+Location
+Type of Incident
+Description
+News Links
+Screenshot Links
+Additional Sources
+Jan 1, 2025
+Las Vegas, Nevada
+Explosion
+A Tesla Cybertruck exploded outside the Trump International.
+AP News
+Imgur
+-
+Jan 29, 2025
+Loveland, Colorado
+Arson/Vandalism
+A woman threw Molotov cocktails at Tesla vehicles and spray-painted "Nazi cars."
+AP News
+-
+ABC News
+Feb 2, 2025
+Loveland, Colorado
+Vandalism
+"Nazi" spray-painted on Tesla dealership sign.
+AP News
+-
+-
+Feb 7, 2025
+Loveland, Colorado
+Arson
+Molotov cocktails thrown at Tesla vehicles at dealership.
+AP News
+-
+-
+Feb 11, 2025
+Loveland, Colorado
+Vandalism
+"F*** Musk" painted on building.
+AP News
+-
+-
+Feb 18, 2025
+Loveland, Colorado
+Vandalism
+"Nazi" spray-painted on 15 Tesla vehicles.
+AP News
+-
+-
+Feb 24, 2025
+Loveland, Colorado
+Attempted Arson
+Woman arrested with incendiary devices targeting Tesla dealership.
+AP News
+-
+-
+Mar 1, 2025
+New York, NY
+Protest/Arrests
+Nine arrested during demonstration at Tesla dealership.
+Business Insider
+-
+-
+Mar 2, 2025
+Owings Mills, Maryland
+Vandalism
+Graffiti ("No Musk") found on dealership after protest.
+Business Insider
+-
+-
+Mar 3, 2025
+Littleton, Massachusetts
+Arson
+Seven Tesla chargers destroyed by deliberate fire.
+CBS Boston
+-
+-
+Mar 6, 2025
+Tigard, Oregon
+Shooting
+Multiple gunshots damaged Tesla dealership windows and vehicles.
+Business Insider
+-
+-
+Mar 6, 2025
+Portland, OR
+Shooting
+Police investigating shooting at Oregon Tesla dealership
+The Hill
+Screenshot
+AP News
+Mar 7, 2025
+Loveland, Colorado
+Arson/Vandalism
+Fire caused by incendiary device, vehicles/building damaged.
+AP News
+-
+-
+Mar 9, 2025
+Seattle, Washington
+Arson
+Four Tesla Cybertrucks damaged in a fire in Seattle.
+Forbes
+-
+Newsweek
+Mar 10, 2025
+Kansas City, Missouri
+Arson
+Two Tesla Cybertrucks burned at a Tesla lot in Kansas City.
+Kansas City Star
+-
+Newsweek
+Mar 11, 2025
+Dedham, Massachusetts
+Vandalism
+Three Teslas vandalized with spray paint and damaged tires in Dedham.
+ABC News
+-
+Boston Globe
+Mar 13, 2025
+Dallas-Fort Worth, Texas
+Vandalism
+Tesla keyed at Dallas-Fort Worth Airport.
+CBS Texas
+-
+Dallas News
+Mar 15, 2025
+South Carolina
+Arson
+Tesla charging station attacked with Molotov cocktails in South Carolina.
+ABC News
+-
+Post and Courier
+Mar 18, 2025
+Las Vegas, Nevada
+Arson/Shooting
+Five Teslas set on fire and shot at in Las Vegas with "Resist" spray-painted.
+CNN
+-
+Forbes
+Submit a New Incident
+Help us track Tesla incidents! Submit below using email or GitHub. We’ll review submissions; spam or incomplete won’t be posted.
+Submit via Email OR Submit via GitHub
